@@ -24,7 +24,6 @@ routes.get('/deportes', (req, res) => {
     res.send(data);
 })
 
-
 routes.get('/editar', (req, res) => {
     const { nombre, precio } = req.query;
     const data = JSON.parse(fs.readFileSync('data/deportes.json', 'utf8'));
